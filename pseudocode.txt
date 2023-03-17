@@ -1,0 +1,23 @@
+START
+
+DECLARE "HasAccount" with true
+
+IF "HasAccount" equal with true
+  PRINT "Login"
+ELSE
+  PRINT "Register"
+
+PROCEDURE TotalHarga (price1, price2)
+STORE "total" with price1 plus price2
+PRINT "total"
+
+DECLARE "keyboard" with number
+DECLARE "mouse" with number
+STORE "keyboard" with 40000
+STORE "mouse" with 30000
+PRINT "keyboard"
+PRINT "mouse"
+
+CALL TotalHarga
+
+END
